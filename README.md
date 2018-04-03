@@ -319,7 +319,7 @@ Marei - Morsy
 Mohammed - Gharib 
 Ahmed - Hendy 
 ```
-and you can apply methods on "MareiCollection" like `first()`, `last()`, `toArray()`, `toJSON()`, `item()` and `list()` like this :
+and you can apply methods on "MareiCollection" like `first()`, `last()`, `toArray()`, `toJSON()`, `item()` and `lists()` like this :
  ```php
 $users = $db->table("users")->get()->toArray();
 ```
