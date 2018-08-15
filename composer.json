@@ -1,5 +1,5 @@
 {
-    "name": "LQ80/DB",
+    "name": "lq80/db",
     "description": "simple query builder class in PHP",
     "require": {
         "php": "^5.3.3 || ^7.0",
