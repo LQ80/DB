@@ -360,9 +360,9 @@ echo $db->table("users")->get()->item(0);
 ```
 print the first row at users table as JSON
 
-If you want to get a specific column of `MareiCollection`, like if you want firebase users' token as an array, use `list()` method and pass the column name like this :
+If you want to get a specific column of `MareiCollection`, like if you want firebase users' token as an array, use `lists()` method and pass the column name like this :
 ```php
-print_r( $db->table("users")->get()->list('token') );
+print_r( $db->table("users")->get()->lists('token') );
 ```
 print all tokens in the users table as an array
 #### `Qget()` Method :
