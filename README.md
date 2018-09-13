@@ -319,7 +319,7 @@ Marei - Morsy
 Mohammed - Gharib 
 Ahmed - Hendy 
 ```
-and you can apply methods on "MareiCollection" like `first()`, `last()`, `toArray()`, `toJSON()`, `item()` and `getList()` like this :
+and you can apply methods on "MareiCollection" like `first()`, `last()`, `toArray()`, `toJSON()`, `item()` and `toList()` like this :
  ```php
 $users = $db->table("users")->get()->toArray();
 ```
@@ -360,9 +360,9 @@ echo $db->table("users")->get()->item(0);
 ```
 print the first row at users table as JSON
 
-If you want to get a specific column of `MareiCollection`, like if you want firebase users' token as an array, use `getList()` method and pass the column name like this :
+If you want to get a specific column of `MareiCollection`, like if you want firebase users' token as an array, use `toList()` method and pass the column name like this :
 ```php
-print_r( $db->table("users")->get()->getList('token') );
+print_r( $db->table("users")->get()->toList('token') );
 ```
 print all tokens in the users table as an array
 #### `Qget()` Method :
